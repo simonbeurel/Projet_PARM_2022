@@ -122,6 +122,71 @@ public class Engine {
     }
 
 
+    public static String EQ(String asm){
+        String[] tab = parseLine(asm);
+        return "110100000"+generateIMMM(tab[1], 8);
+    }
+    public static String NE(String asm){
+        String[] tab = parseLine(asm);
+        return "110100001"+generateIMMM(tab[1], 8);
+    }
+    public static String CS(String asm){
+        String[] tab = parseLine(asm);
+        return "110100010"+generateIMMM(tab[1], 8);
+    }
+    public static String CC(String asm){
+        String[] tab = parseLine(asm);
+        return "110100011"+generateIMMM(tab[1], 8);
+    }
+    public static String MI(String asm){
+        String[] tab = parseLine(asm);
+        return "110100100"+generateIMMM(tab[1], 8);
+    }
+    public static String PL(String asm){
+        String[] tab = parseLine(asm);
+        return "110100101"+generateIMMM(tab[1], 8);
+    }
+    public static String VS(String asm){
+        String[] tab = parseLine(asm);
+        return "110100110"+generateIMMM(tab[1], 8);
+    }
+    public static String VC(String asm){
+        String[] tab = parseLine(asm);
+        return "110100111"+generateIMMM(tab[1], 8);
+    }
+    public static String HI(String asm){
+        String[] tab = parseLine(asm);
+        return "110101000"+generateIMMM(tab[1], 8);
+    }
+    public static String LS(String asm){
+        String[] tab = parseLine(asm);
+        return "110101001"+generateIMMM(tab[1], 8);
+    }
+    public static String GE(String asm){
+        String[] tab = parseLine(asm);
+        return "110101010"+generateIMMM(tab[1], 8);
+    }
+    public static String LT(String asm){
+        String[] tab = parseLine(asm);
+        return "110101011"+generateIMMM(tab[1], 8);
+    }
+    public static String GT(String asm){
+        String[] tab = parseLine(asm);
+        return "110101100"+generateIMMM(tab[1], 8);
+    }
+    public static String LE(String asm){
+        String[] tab = parseLine(asm);
+        return "110101101"+generateIMMM(tab[1], 8);
+    }
+    public static String AL(String asm){
+        String[] tab = parseLine(asm);
+        return "110101110"+generateIMMM(tab[1], 8);
+    }
+
+
+
+
+
 
 
     /** OUTILS UTILISES PARTOUT DANS LES METHODES*/
