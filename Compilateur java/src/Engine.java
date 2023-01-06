@@ -182,6 +182,10 @@ public class Engine {
         String[] tab = parseLine(asm);
         return "110101110"+generateIMMM(tab[1], 8);
     }
+    public static String UB(String asm){
+        String[] tab = parseLine(asm);
+        return "1110"+generateIMMM(tab[1], 11);
+    }
 
 
 
