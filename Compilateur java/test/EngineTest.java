@@ -17,7 +17,7 @@ class EngineTest {
 
     @Test
     public void testLSLS(){
-        assertEquals(Engine.LSLS("LSLS r0,r0,#10"),"0000001010000000");
+        assertEquals(Engine.LSLS("lsls r0, r0, #10"),"0000001010000000");
     }
 
     @Test
@@ -39,6 +39,21 @@ class EngineTest {
     @Test
     public void testANDS(){
         assertEquals(Engine.ANDS("ands r7,r3"),"0100000000011111");
+    }
+
+    @Test
+    public void testSTR(){
+        assertEquals(Engine.STR("str r1, [sp, #4]"),"1001000100000001");
+    }
+
+    @Test
+    public void testLDR(){
+        assertEquals(Engine.LDR("ldr r1, [sp, #4]"),"1001100100000001");
+    }
+
+    @Test
+    public void testADD(){
+        assertEquals(Engine.ADD("add sp,#32"),"1011000000001000");
     }
 
 }

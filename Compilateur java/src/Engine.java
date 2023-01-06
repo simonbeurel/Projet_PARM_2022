@@ -121,6 +121,41 @@ public class Engine {
         return "0100001111"+generateRegistre(tab[2])+generateRegistre(tab[1]);
     }
 
+    public static String STR(String asm){
+
+        asm = asm.replaceAll(" ","");
+        asm = asm.replaceAll("]","");
+        asm = asm.replaceAll(","," ");
+        String[] tab = asm.split(" ");
+        String s = tab[0];
+        String registre = "";
+        registre = registre + s.charAt(3);
+        registre = registre + s.charAt(4);
+        return "10010"+generateRegistre(registre)+generateIMMMx4(tab[2],8);
+    }
+
+    public static String LDR(String asm){
+        asm = asm.replaceAll(" ","");
+        asm = asm.replaceAll("]","");
+        asm = asm.replaceAll(","," ");
+        String[] tab = asm.split(" ");
+        String s = tab[0];
+        String registre = "";
+        registre = registre + s.charAt(3);
+        registre = registre + s.charAt(4);
+        return "10011"+generateRegistre(registre)+generateIMMMx4(tab[2],8);
+    }
+
+    public static String ADD(String asm){
+        String tab[] = parseLine(asm);
+        return "101100000"+generateIMMMx4(tab[2],7);
+    }
+
+    public static String SUB(String asm){
+        String tab[] = parseLine(asm);
+        return "101100001"+generateIMMMx4(tab[2],7);
+    }
+
 
 
 
@@ -128,6 +163,7 @@ public class Engine {
     public static String generateRegistre(String registre){
         String s="";
         int numero = Character.getNumericValue(registre.charAt(1));
+        //System.out.println(registre);
         s = Integer.toBinaryString(numero);
         while(s.length()<3) s = "0"+s;
         return s;
@@ -140,8 +176,17 @@ public class Engine {
         return binaire;
     }
 
+    public static String generateIMMMx4(String immm, int nbBits){
+        immm = immm.replace("#","");
+        //System.out.println(immm);
+        String binaire = Integer.toBinaryString(Integer.valueOf(immm)/4);
+        while(binaire.length()<nbBits) binaire = "0"+binaire;
+        return binaire;
+    }
+
     public static String[] parseLine(String s){
         s = s.replaceAll(","," ");
+        s = s.replaceAll("  "," ");
         String[] tab = s.split(" ");
         return tab;
     }

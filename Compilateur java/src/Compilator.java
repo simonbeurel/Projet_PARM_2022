@@ -9,7 +9,6 @@ public class Compilator {
             String line = sc.nextLine();
             String[] tab = Engine.parseLine(line);
             switch (tab[0]){
-
                 case "MOVS":
                     System.out.println(Engine.MOVS(line));
                     break;
