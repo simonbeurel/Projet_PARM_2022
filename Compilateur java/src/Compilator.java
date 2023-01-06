@@ -9,141 +9,141 @@ public class Compilator {
             String line = sc.nextLine();
             String[] tab = Engine.parseLine(line);
             switch (tab[0]){
-                case "LSLS":
+                case "lsls":
                     if (tab.length==4){
                         System.out.println(Engine.LSLS(line));
                     }else {
                         System.out.println(Engine.LSLS_data_processing(line));
                     }
                     break;
-                case "LSRS":
+                case "lsrs":
                     if (tab.length==4){
                         System.out.println(Engine.LSRS(line));
                     }else {
                         System.out.println(Engine.LSRS_data_processing(line));
                     }
                     break;
-                case "ASRS":
+                case "asrs":
                     if (tab.length==4){
                         System.out.println(Engine.ASRS(line));
                     }else {
                         System.out.println(Engine.ASRS_data_processing(line));
                     }
                     break;
-                case "ADDS":
+                case "adds":
                     if (tab[3].contains("#")){
                         System.out.println(Engine.ADDS_3bits(line));
                     }else {
                         System.out.println(Engine.ADDS_Register(line));
                     }
                     break;
-                case "SUBS":
+                case "subs":
                     if (tab[3].contains("#")){
                         System.out.println(Engine.SUBS_3bits(line));
                     }else {
                         System.out.println(Engine.SUBS_Register(line));
                     }
                     break;
-                case "MOVS":
+                case "movs":
                     System.out.println(Engine.MOVS(line));
                     break;
-                case "ANDS":
+                case "ands":
                     System.out.println(Engine.ANDS(line));
                     break;
-                case "EORS":
+                case "eors":
                     System.out.println(Engine.EORS(line));
                     break;
-                case "ADCS":
+                case "adcs":
                     System.out.println(Engine.ADCS(line));
                     break;
-                case "SBCS":
+                case "sbcs":
                     System.out.println(Engine.SBCS(line));
                     break;
-                case "RORS":
+                case "rors":
                     System.out.println(Engine.RORS(line));
                     break;
-                case "TST":
+                case "tst":
                     System.out.println(Engine.TST(line));
                     break;
-                case "RSBS":
+                case "rsbs":
                     System.out.println(Engine.RSBS(line));
                     break;
-                case "CMP":
+                case "cmp":
                     System.out.println(Engine.CMP(line));
                     break;
-                case "CMN":
+                case "cmn":
                     System.out.println(Engine.CMN(line));
                     break;
-                case "ORRS":
+                case "orrs":
                     System.out.println(Engine.ORRS(line));
                     break;
-                case "MULS":
+                case "muls":
                     System.out.println(Engine.MULS(line));
                     break;
-                case "BICS":
+                case "bics":
                     System.out.println(Engine.BICS(line));
                     break;
-                case "MVNS":
+                case "mvns":
                     System.out.println(Engine.MVNS(line));
                     break;
-                case "STR":
+                case "str":
                     System.out.println(Engine.STR(line));
                     break;
-                case "LDR":
+                case "ldr":
                     System.out.println(Engine.LDR(line));
                     break;
-                case "ADD":
+                case "add":
                     System.out.println(Engine.ADD(line));
                     break;
-                case "SUB":
+                case "sub":
                     System.out.println(Engine.SUB(line));
                     break;
-                case "EQ":
+                case "eq":
                     System.out.println(Engine.EQ(line));
                     break;
-                case "NE":
+                case "ne":
                     System.out.println(Engine.NE(line));
                     break;
-                case "CS":
+                case "cs":
                     System.out.println(Engine.CS(line));
                     break;
-                case "CC":
+                case "cc":
                     System.out.println(Engine.CC(line));
                     break;
-                case "MI":
+                case "mi":
                     System.out.println(Engine.MI(line));
                     break;
-                case "PL":
+                case "pl":
                     System.out.println(Engine.PL(line));
                     break;
-                case "VS":
+                case "vs":
                     System.out.println(Engine.VS(line));
                     break;
-                case "VC":
+                case "vc":
                     System.out.println(Engine.VC(line));
                     break;
-                case "HI":
+                case "hi":
                     System.out.println(Engine.HI(line));
                     break;
-                case "LS":
+                case "ls":
                     System.out.println(Engine.LS(line));
                     break;
-                case "GE":
+                case "ge":
                     System.out.println(Engine.GE(line));
                     break;
-                case "LT":
+                case "lt":
                     System.out.println(Engine.LT(line));
                     break;
-                case "GT":
+                case "gt":
                     System.out.println(Engine.GT(line));
                     break;
-                case "LE":
+                case "le":
                     System.out.println(Engine.LE(line));
                     break;
-                case "AL":
+                case "al":
                     System.out.println(Engine.AL(line));
                     break;
-                case "UB":
+                case "ub":
                     System.out.println(Engine.UB(line));
                     break;
 
