@@ -1,3 +1,7 @@
+import java.io.FileInputStream;
+import java.util.HashMap;
+import java.util.Scanner;
+
 public class Engine {
 
     /** METHODES PERMETTANT DE TRAITER TOUTES LES INSTRUCTIONS*/
@@ -258,5 +262,29 @@ public class Engine {
         s = s.replaceAll("  "," ");
         String[] tab = s.split(" ");
         return tab;
+    }
+
+    public static String generateHexa(String binaire){
+        String hexa = "";
+        for(int i=0; i<binaire.length(); i+=4){
+            String s = binaire.substring(i,i+4);
+            int decimal = Integer.parseInt(s,2);
+            hexa = hexa + Integer.toHexString(decimal);
+        }
+        return hexa;
+    }
+
+    public static HashMap<String,Integer> scanBranch(FileInputStream fi){
+        HashMap<String,Integer> map = new HashMap<String,Integer>();
+        Scanner sc = new Scanner(fi);
+        int i=0;
+        while(sc.hasNextLine()){
+            String s = sc.nextLine();
+            if(s.contains(":")){
+                map.put(s, i-map.size()+1);
+            }
+            i++;
+        }
+        return map;
     }
 }

@@ -56,4 +56,9 @@ class EngineTest {
         assertEquals(Engine.ADD("add sp,#32"),"1011000000001000");
     }
 
+    @Test
+    public void testGenerateHexe(){
+        assertEquals(Engine.generateHexa("0001000001110110"),"1076");
+    }
+
 }
