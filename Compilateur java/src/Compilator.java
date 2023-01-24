@@ -5,7 +5,9 @@ public class Compilator {
     public void process(String path_to_file) throws FileNotFoundException {
         FileInputStream file = new FileInputStream(path_to_file);
         branchTable = Engine.scanBranch(file);
-        Scanner sc = new Scanner(file);
+        FileInputStream file2 = new FileInputStream(path_to_file);
+        Scanner sc = new Scanner(file2);
+        int indexLigne = 1;
         while(sc.hasNext()){
             String line = sc.nextLine();
             String[] tab = Engine.parseLine(line);
@@ -99,58 +101,61 @@ public class Compilator {
                 case "sub":
                     System.out.println(Engine.generateHexa(Engine.SUB(line)));
                     break;
-                case "eq":
-                    System.out.println(Engine.generateHexa(Engine.EQ(line)));
+                case "bEQ":
+                    System.out.println(Engine.generateHexa(Engine.EQ(line,branchTable)));
                     break;
-                case "ne":
-                    System.out.println(Engine.generateHexa(Engine.NE(line)));
+                case "bNE":
+                    System.out.println(Engine.generateHexa(Engine.NE(line,branchTable)));
                     break;
-                case "cs":
-                    System.out.println(Engine.generateHexa(Engine.CS(line)));
+                case "bCS":
+                    System.out.println(Engine.generateHexa(Engine.CS(line,branchTable)));
                     break;
-                case "cc":
-                    System.out.println(Engine.generateHexa(Engine.CC(line)));
+                case "bCC":
+                    System.out.println(Engine.generateHexa(Engine.CC(line,branchTable)));
                     break;
-                case "mi":
-                    System.out.println(Engine.generateHexa(Engine.MI(line)));
+                case "bMI":
+                    System.out.println(Engine.generateHexa(Engine.MI(line,branchTable)));
                     break;
-                case "pl":
-                    System.out.println(Engine.generateHexa(Engine.PL(line)));
+                case "bPL":
+                    System.out.println(Engine.generateHexa(Engine.PL(line,branchTable)));
                     break;
-                case "vs":
-                    System.out.println(Engine.generateHexa(Engine.VS(line)));
+                case "bVS":
+                    System.out.println(Engine.generateHexa(Engine.VS(line,branchTable)));
                     break;
-                case "vc":
-                    System.out.println(Engine.generateHexa(Engine.VC(line)));
+                case "bVC":
+                    System.out.println(Engine.generateHexa(Engine.VC(line,branchTable)));
                     break;
-                case "hi":
-                    System.out.println(Engine.generateHexa(Engine.HI(line)));
+                case "bHI":
+                    System.out.println(Engine.generateHexa(Engine.HI(line,branchTable)));
                     break;
-                case "ls":
-                    System.out.println(Engine.generateHexa(Engine.LS(line)));
+                case "bLS":
+                    System.out.println(Engine.generateHexa(Engine.LS(line,branchTable)));
                     break;
-                case "ge":
-                    System.out.println(Engine.generateHexa(Engine.GE(line)));
+                case "bGE":
+                    System.out.println(Engine.generateHexa(Engine.GE(line,branchTable)));
                     break;
-                case "lt":
-                    System.out.println(Engine.generateHexa(Engine.LT(line)));
+                case "bLT":
+                    System.out.println(Engine.generateHexa(Engine.LT(line,branchTable)));
                     break;
-                case "gt":
-                    System.out.println(Engine.generateHexa(Engine.GT(line)));
+                case "bGT":
+                    System.out.println(Engine.generateHexa(Engine.GT(line,branchTable)));
                     break;
-                case "le":
-                    System.out.println(Engine.generateHexa(Engine.LE(line)));
+                case "bLE":
+                    System.out.println(Engine.generateHexa(Engine.LE(line,branchTable)));
                     break;
-                case "al":
-                    System.out.println(Engine.generateHexa(Engine.AL(line)));
+                case "bAL":
+                    System.out.println(Engine.generateHexa(Engine.AL(line,branchTable)));
                     break;
                 case "ub":
                     System.out.println(Engine.generateHexa(Engine.UB(line)));
                     break;
-
+                case "b":
+                    System.out.println(Engine.generateHexa(Engine.B(line,branchTable)));
+                    break;
                 default:
                     break;
             }
+            indexLigne++;
         }
     }
 }

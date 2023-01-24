@@ -161,69 +161,92 @@ public class Engine {
     }
 
 
-    public static String EQ(String asm){
+    public static String EQ(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110100000"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11010000"+Engine.generateBinaryFromString(offset,8);
     }
-    public static String NE(String asm){
+    public static String NE(String asm,HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110100001"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11010001"+Engine.generateBinaryFromString(offset,8);
     }
-    public static String CS(String asm){
+    public static String CS(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110100010"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11010010"+generateBinaryFromString(offset,8);
     }
-    public static String CC(String asm){
+    public static String CC(String asm,HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110100011"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11010011"+generateBinaryFromString(offset,8);
     }
-    public static String MI(String asm){
+    public static String MI(String asm,HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110100100"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11010100"+Engine.generateBinaryFromString(offset,8);
+
     }
-    public static String PL(String asm){
+    public static String PL(String asm,HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110100101"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11010101"+generateBinaryFromString(offset,8);
     }
-    public static String VS(String asm){
+    public static String VS(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110100110"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11010110"+generateBinaryFromString(offset,8);
     }
-    public static String VC(String asm){
+    public static String VC(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110100111"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11010111"+generateBinaryFromString(offset,8);
     }
-    public static String HI(String asm){
+    public static String HI(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110101000"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11011000"+generateBinaryFromString(offset,8);
     }
-    public static String LS(String asm){
+    public static String LS(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110101001"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11011001"+generateBinaryFromString(offset,8);
     }
-    public static String GE(String asm){
+    public static String GE(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110101010"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11011010"+generateBinaryFromString(offset,8);
     }
-    public static String LT(String asm){
+    public static String LT(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110101011"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11011011"+generateBinaryFromString(offset,8);
     }
-    public static String GT(String asm){
+    public static String GT(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110101100"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11011100"+generateBinaryFromString(offset,8);
     }
-    public static String LE(String asm){
+    public static String LE(String asm, HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110101101"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11011101"+generateBinaryFromString(offset,8);
     }
-    public static String AL(String asm){
+    public static String AL(String asm,HashMap<String, Integer> map){
         String[] tab = parseLine(asm);
-        return "110101110"+generateIMMM(tab[1], 8);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        return "11011110"+generateBinaryFromString(offset,8);
     }
     public static String UB(String asm){
         String[] tab = parseLine(asm);
         return "1110"+generateIMMM(tab[1], 11);
+    }
+
+    public static String B(String asm, HashMap<String, Integer> map){
+        String[] tab = parseLine(asm);
+        int offset = map.get(tab[1]) - map.get(asm) -3;
+        //System.out.println("offset : "+offset + " index : "+index+" indexLigne : "+indexLigne + " bonus : "+bonus);
+        return "11100"+Engine.generateBinaryFromString(offset,11);
     }
 
 
@@ -272,6 +295,7 @@ public class Engine {
             hexa = hexa + Integer.toHexString(decimal);
         }
         return hexa;
+        //return binaire;
     }
 
     public static HashMap<String,Integer> scanBranch(FileInputStream fi){
@@ -280,11 +304,24 @@ public class Engine {
         int i=0;
         while(sc.hasNextLine()){
             String s = sc.nextLine();
-            if(s.contains(":")){
-                map.put(s, i-map.size()+1);
+            if(!s.contains(":")) {
+                map.put(s, i);
+                i++;
+            }else{
+                s = s.replace(":","");
+                map.put(s, i);
             }
-            i++;
         }
+        sc.close();
         return map;
+    }
+
+    public static String generateBinaryFromString(int value, int nbBits){
+        String binaire = Integer.toBinaryString(value);
+        if(binaire.length()>nbBits){
+            binaire = binaire.substring(binaire.length()-nbBits);
+        }
+        while(binaire.length()<nbBits) binaire = "0"+binaire;
+        return binaire;
     }
 }
