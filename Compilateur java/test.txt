@@ -8,7 +8,7 @@ b .endif1
 .then1:
 rsbs r2, r2, #0
 .endif1:
-cmp r2, r1 
+cmp r2, r1
 bLT .then2
 b .endif2
 .then2:
