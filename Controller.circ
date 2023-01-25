@@ -458,7 +458,7 @@ end TCL_Generic;
       <a name="size" val="30"/>
       <a name="width" val="3"/>
     </comp>
-    <comp lib="1" loc="(700,530)" name="OR Gate">
+    <comp lib="1" loc="(690,530)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="width" val="4"/>
     </comp>
@@ -665,11 +665,11 @@ end TCL_Generic;
     <wire from="(610,880)" to="(700,880)"/>
     <wire from="(630,350)" to="(630,540)"/>
     <wire from="(630,350)" to="(940,350)"/>
-    <wire from="(630,540)" to="(670,540)"/>
+    <wire from="(630,540)" to="(660,540)"/>
     <wire from="(650,510)" to="(650,520)"/>
     <wire from="(650,510)" to="(940,510)"/>
-    <wire from="(650,520)" to="(670,520)"/>
-    <wire from="(700,530)" to="(710,530)"/>
+    <wire from="(650,520)" to="(660,520)"/>
+    <wire from="(690,530)" to="(710,530)"/>
     <wire from="(900,1060)" to="(900,1070)"/>
     <wire from="(900,1070)" to="(960,1070)"/>
     <wire from="(900,1090)" to="(910,1090)"/>
