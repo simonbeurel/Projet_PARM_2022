@@ -1,0 +1,122 @@
+
+u
+java:S2293®"YReplace the type specification in this constructor call with the diamond operator ("<>").(Š„„ùÿÿÿÿ
+w
+java:S1319¤"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(¥âé±
+|
+java:S1319©"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(ó¥ö†úÿÿÿÿ
+w
+java:S1319®"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(–ˆã–
+|
+java:S1319³"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(éÏ¾Šøÿÿÿÿ
+w
+java:S1319¸"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(éÔÖë
+|
+java:S1319¾"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(¸Õ·§şÿÿÿÿ
+|
+java:S1319Ã"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(çßù¼üÿÿÿÿ
+w
+java:S1319È"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(‡Èæ„
+|
+java:S1319Í"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(é±ºÜıÿÿÿÿ
+w
+java:S1319Ò"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(Ğ±Ë
+v
+java:S1319×"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(Á±İ
+|
+java:S1319Ü"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(¡ºÙáøÿÿÿÿ
+|
+java:S1319á"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(‰›ıáüÿÿÿÿ
+|
+java:S1319æ"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(á «¾şÿÿÿÿ
+|
+java:S1319ë"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(áÈÛ¡üÿÿÿÿ
+w
+java:S1319õ"`The type of "map" should be an interface such as "Map" rather than the implementation "HashMap".(Â˜Å
+‰
+java:S1319­"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(õèæØşÿÿÿÿ
+8
+java:S1643ˆ"Use a StringBuilder instead.(ÈÒ›àüÿÿÿÿ
+3
+java:S1643"Use a StringBuilder instead.(Ä‚ºË
+3
+java:S1643—"Use a StringBuilder instead.(Ä‚ºË
+8
+java:S1643§"Use a StringBuilder instead.(ò“—ÿÿÿÿÿ
+3
+java:S1643Ä"Use a StringBuilder instead.(Ä‚ºË
+r
+java:S1488"[Immediately return this expression instead of assigning it to the temporary variable "tab".(ÇöÄÇ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(¡Ö±µúÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÒ±éûÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”—µÿüÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ«´ˆ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×éöÈ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÉçˆ
+h	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì­Ñõùÿÿÿÿ
+h	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë¢§³øÿÿÿÿ
+h	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù‘Õ¾ûÿÿÿÿ
+b	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ƒÒR
+c	java:S1005"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı”ÖÃ
+c	java:S100:"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÆœ¨
+c	java:S100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÓì
+c	java:S100D"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–â
+h	java:S100I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Â†ûÿÿÿÿ
+h	java:S100N"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¿Å©øÿÿÿÿ
+h	java:S100S"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê¬Ş·şÿÿÿÿ
+c	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÔŸÀ
+c	java:S100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÅ­–
+c	java:S100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ‡ğª
+h	java:S100g"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à‹…üÿÿÿÿ
+h	java:S100l"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£“¶ìşÿÿÿÿ
+c	java:S100q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑïÛ¿
+h	java:S100v"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ºıúÿÿÿÿ
+h	java:S100{"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( î—áşÿÿÿÿ
+i	java:S100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í•Ïİÿÿÿÿÿ
+d
+java:S5361‚"HReplace this call to "replaceAll()" by a call to the "replace()" method.(åŒÜ…ıÿÿÿÿ
+_
+java:S5361ƒ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(õ…‡¥
+_
+java:S5361„"HReplace this call to "replaceAll()" by a call to the "replace()" method.(·¢ô™
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±™ÃÓÿÿÿÿÿ
+d
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(åŒÜ…ıÿÿÿÿ
+_
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(õ…‡¥
+_
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(·¢ô™
+d	java:S100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á­û¿
+A
+java:S1197š"*Move the array designators [] to the type.(—åŠ
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ï‰º
+A
+java:S1197Ÿ"*Move the array designators [] to the type.(—åŠ
+d	java:S100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥âé±
+i	java:S100©"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¥ö†úÿÿÿÿ
+d	java:S100®"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ˆã–
+i	java:S100³"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÏ¾Šøÿÿÿÿ
+d	java:S100¸"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÔÖë
+i	java:S100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Õ·§şÿÿÿÿ
+i	java:S100Ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çßù¼üÿÿÿÿ
+d	java:S100È"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Èæ„
+i	java:S100Í"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é±ºÜıÿÿÿÿ
+d	java:S100Ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ±Ë
+c	java:S100×"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á±İ
+i	java:S100Ü"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ºÙáøÿÿÿÿ
+i	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰›ıáüÿÿÿÿ
+i	java:S100æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á «¾şÿÿÿÿ
+i	java:S100ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÈÛ¡üÿÿÿÿ
+c	java:S100ğ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ÉØJ
+d	java:S100õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â˜Å
+W	java:S125ø"<This block of commented-out lines of code should be removed.(ò¯â–ùÿÿÿÿ
+R	java:S125†"<This block of commented-out lines of code should be removed.(¹Éáµ
+W	java:S125•"<This block of commented-out lines of code should be removed.(éğ©¨øÿÿÿÿ
+d
+java:S5361œ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(‡¤šºÿÿÿÿÿ
+A
+java:S6326"%Replace spaces with quantifier `{2}`.(°¼²†ùÿÿÿÿ
+d
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(°¼²†ùÿÿÿÿ
+W	java:S125ª"<This block of commented-out lines of code should be removed.(’§Ãòúÿÿÿÿ
